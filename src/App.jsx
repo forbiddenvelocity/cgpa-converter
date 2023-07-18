@@ -7,11 +7,14 @@ function App() {
   const [count, setCount] = useState(0)
   const [cgpaTenScale, setCgpaTenScale] = useState(0)
   const [cgpaFourScale, setCgpaFourScale] = useState(0)
+  const [cgpaTwentyScale, setCgpaTwentyScale] = useState(0)
 
   const convertCGPA = () => {
-    const cgpaFour = (cgpaTenScale / 2.5).toFixed(2)
-    setCgpaFourScale(cgpaFour)
-  }
+    const cgpaFour = (cgpaTenScale / 2.5).toFixed(2);
+    setCgpaFourScale(cgpaFour);
+    const cgpaTwenty = (cgpaTenScale * 2).toFixed(2);
+    setCgpaTwentyScale(cgpaTwenty);
+  };
 
   return (
     <>
@@ -32,7 +35,7 @@ function App() {
           CGPA on 4-point scale (USA/Canada): {cgpaFourScale}
         </p>
         <p>
-          CGPA on 20-point scale(France): 
+          CGPA on 20-point scale(France): {cgpaTwentyScale}
         </p>
       </div>
     </>
