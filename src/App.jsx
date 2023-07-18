@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <h>Academic Simplifier</h>
+      <h>Academic Tool</h>
       <h1>Convert CGPA</h1>
       <div className='card'>
         <label>
